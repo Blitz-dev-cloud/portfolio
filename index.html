@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add AOS library for scroll animations -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <span class="dev-name">Sounak Maity</span>
+      <span class="nav-bar">
+        <ul class="nav-bar-contents">
+          <li class="nav-bar-text home"><a href="#home">Home</a></li>
+          <li class="nav-bar-text about"><a href="#about">About</a></li>
+          <li class="nav-bar-text works"><a href="#projects">Projects</a></li>
+          <li class="nav-bar-text services">
+            <a href="#experience">Skills</a>
+          </li>
+        </ul>
+      </span>
+      <span class="contact-info-button">
+        <button class="contact-button" onclick="scrollToSection('contact')">
+          Contact
+        </button>
+      </span>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div id="home" class="self-introduction">
+      <span class="name-info" data-aos="fade-right" data-aos-duration="1000">
+        <h1 class="animate-text">Sounak Maity</h1>
+        <h2 class="typewriter">Web Developer</h2>
+      </span>
+      <span class="my-image" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="my-image" src="./assets/images/pfp1.webp" />
+      </span>
+      <span class="info-box" data-aos="fade-left" data-aos-duration="1000">
+        <div class="box-in-box">
+          <h1>Hola!</h1>
+          <p>
+            I'm a passionate developer skilled in <b>JavaScript</b>,
+            <b>React</b> and <b>Node.js</b>, dedicated to building robust,
+            efficient, scalable, and user-friendly solutions. I thrive on
+            solving complex problems, learning new technologies, and turning
+            ideas into reality. Let's create something amazing together!
+          </p>
+          <br />
+          <div class="bottons-cluster">
+            <button class="hire-me" onclick="scrollToSection('contact')">
+              Hire
+            </button>
+            <button class="read-more" onclick="scrollToSection('about')">
+              Read more
+            </button>
+          </div>
+        </div>
+      </span>
+    </div>
+    <br />
+    <br />
+    <div id="about" class="about-me-section">
+      <h3 class="sub-text" style="color: gray" data-aos="fade-up">
+        Get to know more
+      </h3>
+      <h1 class="sub-text" data-aos="fade-up" data-aos-delay="100">About me</h1>
+      <br />
+      <br />
+      <div class="qualifications">
+        <button
+          class="education-and-qualifications exp"
+          data-aos="flip-left"
+          data-aos-duration="800"
+        >
+          <i class="fa-solid fa-medal"></i>
+          <br />
+          <p>Experience</p>
+          <p>1 Year</p>
+          <p>Frontend Development</p>
+        </button>
+        <button
+          class="education-and-qualifications"
+          data-aos="flip-right"
+          data-aos-duration="800"
+        >
+          <i class="fa-solid fa-graduation-cap"></i>
+          <br />
+          <p>Education</p>
+          <p>B.Tech. in Computer Science</p>
+        </button>
+      </div>
+    </div>
+    <br />
+    <div class="intro-short" data-aos="fade-up" data-aos-duration="1000">
+      <p>
+        Hi, I'm someone who loves diving deep into the world of technology and
+        programming. I've built a solid foundation in languages like <b>C</b>,
+        <b>C++</b>, and <b>Java</b>, and I've also honed my skills in
+        <b>Data Structures and Algorithms.</b> Lately, I've been exploring
+        full-stack development with the <b>MERN</b> stack and delving into
+        blockchain technology with <b>Solidity.</b> I enjoy taking on exciting
+        challenges and also curious about low-level programming and have started
+        exploring <b>Rust.</b> For me, learning is a constant journey, and I'm
+        always eager to grow, experiment, and turn ideas into reality.
+      </p>
+    </div>
+    <br />
+    <br />
+    <div id="experience">
+      <h3 class="sub-text" style="color: gray" data-aos="fade-up">
+        Explore My
+      </h3>
+      <h1 class="sub-text" data-aos="fade-up" data-aos-delay="100">
+        Experiences and Skills
+      </h1>
+      <br />
+      <br />
+      <div class="experience-section">
+        <div
+          class="experience-container front"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <p style="font-size: larger; padding-left: 30px">
+            Frontend Development
+          </p>
+          <br />
+          <br />
+          <div class="checker frontend">
+            <p class="superscript">
+              <i class="fa-solid fa-gear skill-icon"></i> HTML
+            </p>
+            <p class="superscript">
+              <i class="fa-solid fa-gear skill-icon"></i> CSS
+            </p>
+            <p class="subscript">Intermediate</p>
+            <p class="subscript">Advanced</p>
+            <p class="superscript">
+              <i class="fa-solid fa-gear skill-icon"></i> JavaScript
+            </p>
+            <p class="superscript">
+              <i class="fa-solid fa-gear skill-icon"></i> React
+            </p>
+            <p class="subscript">Advanced</p>
+            <p class="subscript">Intermediate</p>
+            <p class="superscript">
+              <i class="fa-solid fa-gear skill-icon"></i> TailwindCSS
+            </p>
+            <p class="superscript">
+              <i class="fa-solid fa-gear skill-icon"></i> Figma
+            </p>
+            <p class="subscript">Intermediate</p>
+            <p class="subscript">Basic</p>
+          </div>
+        </div>
+        <div
+          class="experience-container"
+          style="padding: 80px 100px"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <div>
+            <p style="font-size: larger; padding-left: 30px">
+              Backend Development and Tools
+            </p>
+            <br />
+            <br />
+            <div class="checker backend">
+              <p class="superscript">
+                <i class="fa-solid fa-gear skill-icon"></i> MongoDB
+              </p>
+              <p class="superscript">
+                <i class="fa-solid fa-gear skill-icon"></i> Ethers JS
+              </p>
+              <p class="subscript">Intermediate</p>
+              <p class="subscript">Basic</p>
+              <p class="superscript">
+                <i class="fa-solid fa-gear skill-icon"></i> Node JS
+              </p>
+              <p class="superscript">
+                <i class="fa-solid fa-gear skill-icon"></i> Express JS
+              </p>
+              <p class="subscript">Basic</p>
+              <p class="subscript">Basic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="projects">
+      <h3 class="sub-text" style="color: gray" data-aos="fade-up">
+        Browse My Recent
+      </h3>
+      <h1 class="sub-text" data-aos="fade-up" data-aos-delay="100">Projects</h1>
+      <div class="project-section">
+        <div class="project-info" data-aos="flip-up" data-aos-duration="1000">
+          <div class="project-cover">
+            <div class="project-cover-image" style="width: 100%; height: 100%">
+              <img
+                src="./assets/images/project1.png"
+                alt="Project One"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+
+            <br />
+            <p style="font-size: larger">
+              <b
+                >A simple React App to Transfer Ethereum from one account to
+                Another</b
+              >
+            </p>
+            <br />
+            <div class="btn-cascade">
+              <button class="git-link">
+                <a
+                  href="https://github.com/Blitz-dev-cloud/crypto-app/tree/master"
+                  style="text-decoration: none; color: white"
+                  >GitHub</a
+                >
+              </button>
+              <button class="live-demo">Live Demo</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project-info"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <div class="project-cover">
+            <div class="project-cover-image" style="width: 100%; height: 100%">
+              <img
+                src="./assets/images/project2.png"
+                alt="Project One"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <br />
+            <p style="font-size: larger">
+              <b>A 3D iPhone website using Three.js</b>
+            </p>
+            <br />
+            <div class="btn-cascade">
+              <button class="git-link">
+                <a
+                  href="https://github.com/Blitz-dev-cloud/3d-iPhone/tree/master"
+                  style="text-decoration: none; color: white"
+                  >GitHub</a
+                >
+              </button>
+              <button class="live-demo">Live Demo</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project-info"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          <div class="project-cover">
+            <div class="project-cover-image" style="width: 100%; height: 100%">
+              <img
+                src="./assets/images/project3.png"
+                alt="Project One"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <br />
+            <p style="font-size: larger">
+              <b>A NFT marketplace to mint, sell and buy NFTs.</b>
+            </p>
+            <br />
+            <div class="btn-cascade">
+              <button class="git-link">
+                <a
+                  href="https://github.com/Blitz-dev-cloud/CryptoMonk/tree/master"
+                  style="text-decoration: none; color: white"
+                  >GitHub</a
+                >
+              </button>
+              <button class="live-demo">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="contact" class="contact-me-section">
+      <h3 class="sub-text" style="color: gray" data-aos="fade-up">
+        Get In Touch
+      </h3>
+      <h1 class="sub-text" data-aos="fade-up" data-aos-delay="100">
+        Connect With Me
+      </h1>
+      <br />
+      <br />
+      <div
+        class="btn-cascade-contact"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+      >
+        <button class="btn mail-me">
+          <a
+            href="https://github.com/Blitz-dev-cloud"
+            style="text-decoration: none; color: white"
+            ><i class="fa-brands fa-github"></i> Follow</a
+          >
+        </button>
+        <button class="btn linked-in">
+          <a
+            href="https://www.linkedin.com/in/sounak-maity-79a116290/"
+            style="text-decoration: none; color: white"
+            ><i class="fa-brands fa-linkedin"></i> Connect</a
+          >
+        </button>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <div class="footer-container">
+        <p class="link instagram">
+          <i class="fa-brands fa-instagram"></i> sounak1629
+        </p>
+        <p class="link gmail">
+          <i class="fa-solid fa-envelope"></i> sounak1629@gmail.com
+        </p>
+        <p class="link twitter">
+          <i class="fa-brands fa-x-twitter"></i> sounak1629
+        </p>
+      </div>
+      <br />
+      <p>
+        Copyright <i class="fa-regular fa-copyright"></i> 2024 Sounak Maity. All
+        Rights Reserved
+      </p>
+      <button id="back-to-top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/36d8e8e06a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
